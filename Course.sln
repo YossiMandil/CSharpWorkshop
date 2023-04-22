@@ -5,15 +5,23 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course", "Course\Course.csproj", "{815F80EC-32A9-4284-9A9F-128B759E52B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{AAF5CA7A-1E6E-4F1E-90D6-BFF17A2B47D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{AAF5CA7A-1E6E-4F1E-90D6-BFF17A2B47D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "Basic\ExtensionMethods.csproj", "{60B58CE5-877F-4A12-830A-9E89136AA673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "Basic\ExtensionMethods.csproj", "{60B58CE5-877F-4A12-830A-9E89136AA673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceTests", "Tests\InheritanceTests.csproj", "{B03BD39F-E586-4F44-86F9-D41D3C0DFB25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritanceTests", "Tests\InheritanceTests.csproj", "{B03BD39F-E586-4F44-86F9-D41D3C0DFB25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsTests", "ExtensionsTests\ExtensionMethodsTests.csproj", "{BAE0CA7D-B271-4F43-BDEA-9E6D474FB937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethodsTests", "ExtensionsTests\ExtensionMethodsTests.csproj", "{BAE0CA7D-B271-4F43-BDEA-9E6D474FB937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solutions", "Solutions\Solutions.csproj", "{86646CEA-380F-4CE3-A780-8594643774D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solutions", "Solutions\Solutions.csproj", "{86646CEA-380F-4CE3-A780-8594643774D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyList", "CustomList\MyList.csproj", "{A3D07202-3480-4FCD-803B-B6AA083A9161}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyListTests", "MyListTests\MyListTests.csproj", "{D3BFCA93-5B1C-4236-B743-E0C8E3169D7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{11C73F68-56B3-41A7-A9D6-F0CF4CD4E556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQTests", "LINQTests\LINQTests.csproj", "{1AF97646-A8E0-41D9-A1FD-285322089607}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{86646CEA-380F-4CE3-A780-8594643774D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86646CEA-380F-4CE3-A780-8594643774D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86646CEA-380F-4CE3-A780-8594643774D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D07202-3480-4FCD-803B-B6AA083A9161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D07202-3480-4FCD-803B-B6AA083A9161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D07202-3480-4FCD-803B-B6AA083A9161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D07202-3480-4FCD-803B-B6AA083A9161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3BFCA93-5B1C-4236-B743-E0C8E3169D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BFCA93-5B1C-4236-B743-E0C8E3169D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3BFCA93-5B1C-4236-B743-E0C8E3169D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3BFCA93-5B1C-4236-B743-E0C8E3169D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C73F68-56B3-41A7-A9D6-F0CF4CD4E556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C73F68-56B3-41A7-A9D6-F0CF4CD4E556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C73F68-56B3-41A7-A9D6-F0CF4CD4E556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C73F68-56B3-41A7-A9D6-F0CF4CD4E556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF97646-A8E0-41D9-A1FD-285322089607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF97646-A8E0-41D9-A1FD-285322089607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF97646-A8E0-41D9-A1FD-285322089607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF97646-A8E0-41D9-A1FD-285322089607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

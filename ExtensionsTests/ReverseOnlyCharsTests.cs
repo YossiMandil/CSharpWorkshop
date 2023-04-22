@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace ExtensionsTests
+namespace ExtensionMethodsTests
 {
     public class ReverseOnlyCharsTests
     {
