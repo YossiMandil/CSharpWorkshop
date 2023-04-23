@@ -266,6 +266,17 @@ public static class LinqExercise
     {
         return numbers.OrderBy(x => x).Skip(1).First();
     }
+
+    //Given a list of integers, write a LINQ query to find all pairs of integers in the list whose sum is equal to a specified target value.The resulting pairs should be sorted in ascending order based on the first integer in the pair, and then in ascending order based on the second integer in the pair. The first integer should not be bigger than the second one.
+    public static IEnumerable<(int, int)> Ex4(this IEnumerable<int> numbers, int target)
+    {
+        return numbers
+            .SelectMany((num1, idx) => numbers.Skip(idx + 1).Select(num2 => Tuple.Create(num1, num2)))
+            .Where(pair => pair.Item1 + pair.Item2 == target)
+            .Select(pair => pair.Item1 > pair.Item2 ? (pair.Item2, pair.Item1) : (pair.Item1, pair.Item2))
+            .OrderBy(pair => pair.Item1)
+            .ThenBy(pair => pair.Item2);
+    }
 }
 public record Person(string Name, DateTime DateOfBirth);
 
