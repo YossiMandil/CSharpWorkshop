@@ -1,0 +1,135 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HashCodeApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/fast": {
+      "get": {
+        "tags": [
+          "HashCode"
+        ],
+        "parameters": [
+          {
+            "name": "input",
+            "in": "header",
+            "schema": { }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/medium": {
+      "get": {
+        "tags": [
+          "HashCode"
+        ],
+        "parameters": [
+          {
+            "name": "input",
+            "in": "header",
+            "schema": { }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/slow": {
+      "get": {
+        "tags": [
+          "HashCode"
+        ],
+        "parameters": [
+          {
+            "name": "input",
+            "in": "header",
+            "schema": { }
+          },
+          {
+            "name": "seed",
+            "in": "header",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

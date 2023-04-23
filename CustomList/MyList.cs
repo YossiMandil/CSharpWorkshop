@@ -13,6 +13,6 @@
 
     public class MyList
     {
-        List<string> list;
+        List<string> list = new List<string>();
     }
 }

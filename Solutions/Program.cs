@@ -140,7 +140,7 @@ public class MyList<T> : IEnumerable<T>
         }
 
         _count--;
-        _items[_count] = default; // Set the last item to default value to avoid memory leaks
+        _items[_count] = default!; // Set the last item to default value to avoid memory leaks
 
         if (_count <= _items.Length / 4)
         {
@@ -268,5 +268,28 @@ public static class LinqExercise
     }
 }
 public record Person(string Name, DateTime DateOfBirth);
+
+#endregion
+
+#region Processors
+public interface IProcessor<TInput, Toutput>
+{
+    Toutput Process(TInput input);
+    string Name { get; }
+}
+
+public class DataProcessor<TInput, TOutput>
+{
+    private readonly IProcessor<TInput, TOutput> _processor;
+
+    public DataProcessor(IProcessor<TInput, TOutput> processor)
+    {
+        _processor = processor;
+    }
+
+    public IEnumerable<TOutput> ProccessData(IEnumerable<TInput> dataToProcess) => dataToProcess.Select(x => _processor.Process(x));
+}
+
+
 
 #endregion
